@@ -24,5 +24,8 @@ public boolean esEquilatero(){
     }
 
 }
+public boolean esEscaleno() {
+        return this.lado1 != this.lado2 && this.lado1 != this.lado3 && this.lado2 != this.lado3;
+}
 
 }
