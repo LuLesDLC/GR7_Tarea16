@@ -1,5 +1,3 @@
-
-
 package ec.edu.epn.modelo;
 
 import ec.edu.epn.excepciones.*;
@@ -55,6 +53,11 @@ public class Triangulo {
         double area = Math.sqrt(s * (s - lado1) * (s - lado2) * (s - lado3));
         return area;
     }
+
+
+  public boolean esEscaleno() {
+        return this.lado1 != this.lado2 && this.lado1 != this.lado3 && this.lado2 != this.lado3;
+  }
 
 
 }
